@@ -1,0 +1,91 @@
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.item {
+	background-color: purple;
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col {
+	position: relative;
+	min-height: 1px;
+	float: left;
+	padding: 15px;
+}
+
+
+@media(max-width:767px){
+	.col-1 {
+		width: 25%;
+	}
+	.col-2 {
+		width: 50%;
+	}
+	.col-3 {
+		width: 50%;
+	}
+	.col-4, .col-5, .col-6, .col-7,
+	.col-8, .col-9, .col-10, .col-11 {
+		width: 100%;
+	}	
+}
+@media(min-width:768px){
+	.col-1 {
+		width: 16.666%;
+	}
+	.col-2 {
+		width: 33.333%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.333%;
+	}	
+
+	.col-5 {
+		width: 41.666%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.333%;
+	}
+	.col-8 {
+		width: 66.666%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.333%;
+	}
+	.col-11 {
+		width: 91.666%;
+	}
+
+}
+@media(min-width:992px){
+	.col-1 {
+		width: 8.333%;
+	}
+	.col-2 {
+		width: 16.666%;
+	}
+	
+}
+
+.col-12 {
+	width: 100%;
+}
